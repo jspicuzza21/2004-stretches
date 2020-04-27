@@ -18,6 +18,15 @@ returns { a: 1, c: 42};
 
 function pluck(obj, elements) {
   // YOUR CODE
+  let newObj={}
+
+  for (let i=0; i<elements.length; i++){
+    
+    if (obj[elements]) { 
+    newObj[elements[i]]=obj[elements[i]]
+    }
+  }
+  return newObj
 }
 
 module.exports = { pluck };
