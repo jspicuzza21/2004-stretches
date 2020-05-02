@@ -11,7 +11,7 @@ const validPalindrome = (str) => {
         return false
       }
   }
-
+ //console.log('b')
 return true
 };
 
