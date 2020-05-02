@@ -10,8 +10,7 @@ const validPalindrome = (str) => {
       } else {
         return false
       }
-  }
- //console.log('b')
+    }
 return true
 };
 
