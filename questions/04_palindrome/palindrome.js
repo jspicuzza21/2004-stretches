@@ -14,4 +14,4 @@ const validPalindrome = (str) => {
 return true
 };
 
-module.exports = { validPalindrome };
+module.exports = {validPalindrome };
