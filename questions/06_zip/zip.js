@@ -9,6 +9,20 @@ zip([
 
 function zip(objs) {
   // YOUR CODE
+
+  let newObj={}
+
+  objs.forEach(element => {
+    let currentKeys = Object.keys(newObj)
+    for (let key in element){
+      if (currentKeys.includes(key)){
+        newObj[key]+=element[key]
+      } else {
+        newObj[key]=element[key]
+      }
+    }
+  });
+return newObj
 }
 
 module.exports = { zip };
