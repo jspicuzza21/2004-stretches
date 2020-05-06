@@ -16,8 +16,21 @@ ex 2.
 
 */
 
-const keysToRooms = (rooms) => {
-  //YOUR CODE HERE
-};
+
+  const keysToRooms = (rooms) => {
+    //YOUR CODE HERE
+    let keys=[]
+    for (let i=0; i<rooms.length; i++){
+      let currentRoom = rooms[i];
+      if(i===0||keys.includes(i)){
+        for (let j=0;j<currentRoom.length; j++){
+        keys.push(currentRoom[j])
+        }
+      } else {
+        return false
+      }
+    }
+    return true
+  };
 
 module.exports = { keysToRooms };
