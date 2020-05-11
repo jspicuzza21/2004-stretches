@@ -22,6 +22,7 @@ examples:
 1994 // MCMXCIV
 */
 
+<<<<<<< HEAD
 const romanInteger = (num) => {
   //YOUR CODE HERE
   if (typeof(num)!=='number' || num<1 ||num>=4000){
@@ -54,6 +55,10 @@ const romanInteger = (num) => {
     }
   }
 return newStr
+=======
+const romanInteger = () => {
+  //YOUR CODE HERE
+>>>>>>> 2fca8f5fa843c3d24a4a1242da7364a5f58db084
 };
 
 module.exports = { romanInteger };
