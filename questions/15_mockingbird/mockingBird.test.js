@@ -9,10 +9,10 @@ describe('Learn how to write mock functions!', () => {
     capitalizeWordMock = jest.fn(capitalizeWord);
 
     // uncomment the console.log to see all the properties that jest adds to a mock
-    // console.log(
-    //   '**************** capitalizeWordMock properties \n',
-    //   capitalizeWordMock,
-    // );
+    console.log(
+      '**************** capitalizeWordMock properties \n',
+      capitalizeWordMock,
+    );
 
     // lets run the function a few times
     capitalizeWordMock('i');
@@ -78,7 +78,7 @@ describe('Learn how to write mock functions!', () => {
       };
 
       // create a mock for the bird function
-      const birdMock = null;
+      const birdMock = jest.fn(bird);
 
       const repeaterOutput = repeater(birdMock, numberOfRepeats);
 
