@@ -17,16 +17,16 @@ const tenRows = `1
 46474849505152535455`;
 
 describe('Floyds Triangle', () => {
-  test('it should return a string', () => {
+  xtest('it should return a string', () => {
     expect(typeof floydsTriangle()).toEqual('string');
   });
-  test('it should output the correct triangle', () => {
+  xtest('it should output the correct triangle', () => {
     expect(floydsTriangle(0)).toEqual(zeRows);
     expect(floydsTriangle(1)).toEqual(oneRow);
     expect(floydsTriangle(3)).toEqual(threeRows);
     expect(floydsTriangle(10)).toEqual(tenRows);
   });
-  test('it should not be hard coded', () => {
+  xtest('it should not be hard coded', () => {
     const randomNumRows = Math.ceil(Math.random() * 1000) + 1000;
     const randomTriangle = floydsTriangle(randomNumRows);
     const totalNums = (randomNumRows / 2) * (1 + randomNumRows);
