@@ -33,7 +33,7 @@ const getrootvalue = (obj, val) => {
                 }
             }
         } else if (typeof(currentRoot==='object')){
-            getrootvalue(currentRoot)
+            getrootvalue(currentRoot, val)
         }
     }
     return root
