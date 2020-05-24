@@ -6,8 +6,17 @@ class StatefulThing {
   constructor(initialState = {}) {
     this.state = initialState;
   }
-  setState() {
-    // YOUR CODE
+  setState(obj) {
+    let newState={};
+
+    for (let key in this.state){
+      newState[key]=this.state[key]
+    }
+
+    for (let key in obj){
+      newState[key]= obj[key];
+    }
+    return newState;
   }
 }
 
