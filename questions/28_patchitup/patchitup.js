@@ -7,3 +7,7 @@
 // - Also NB: repl.it doesn't let you monkey patch! but the chrome console does.
 
 //code goes here
+Array.prototype.contBy = function (callbackFunc){
+
+
+}
