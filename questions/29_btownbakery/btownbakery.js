@@ -20,9 +20,6 @@ while(moreIngredients){
   }
     numCakes++
 }
-
-  return numCakes;
-
 };
 
 module.exports = { btownbake };
