@@ -17,3 +17,11 @@
 // YOUR CODE (intentionally blank):
 
 // no export statement required
+Array.prototype.next=function(){
+
+    if (!this.idx){
+        this.idx=0
+    }
+    console.log(this[this.idx]);
+    this.idx++;
+}
