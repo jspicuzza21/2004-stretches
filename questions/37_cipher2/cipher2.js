@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const decypher = (arg) => {
   //YOUR CODE HERE
     //YOUR CODE HERE
@@ -29,4 +30,9 @@ const decypher = (arg) => {
     }
     return newStr.join('')
   };
+=======
+const decypher = () => {
+  //YOUR CODE HERE
+};
+>>>>>>> b994823313926a9c8f9f8dbf85f03796c93b727c
 module.exports = { decypher };
