@@ -30,6 +30,24 @@ class Box {
     return setTimeout(() => this.unpack(), dur);
   }
   //*****YOUR CODE STARTS HERE******
+  expand(num, arr){
+    this.capacity+=num;
+    if (this.contents.length !== this.capacity) {
+      arr.forEach(element=> {
+        this.contents.push(new Box(element[0], element[1]))
+      })
+    } else {
+      throw new Error('Capacity Met!');
+    }
+  }
+  loot(idx){
+    if(this.contents[idx]){
+      return this.contents[idx]
+    } else {
+      const random = Math.floor(Math.random()*this.capacity)
+      return this.contents[random]
+    }
+  }
 }
 
 module.exports = { Box };
