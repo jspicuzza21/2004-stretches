@@ -4,4 +4,11 @@
 
 //write your function here
 
+function* sqauredGen(num, max){
+    while(num<max){
+        num++
+        yield num*num
+    }
+    return undefined;
+}
 module.exports = { sqauredGen };
